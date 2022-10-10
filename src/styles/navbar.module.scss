@@ -1,0 +1,22 @@
+@import "variables";
+
+.primary-navbar :global {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 0;
+  //border-bottom: 1px solid $grey;
+
+  .links {
+    a {
+      padding: 4px 16px;
+      font-size: 16px;
+      text-decoration: none;
+      color: $primary-color;
+
+      &:hover {
+        color: $text-color-primary;
+      }
+    }
+  }
+}

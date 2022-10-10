@@ -1,0 +1,8 @@
+@import "variables";
+
+.footer :global {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 16px;
+}
