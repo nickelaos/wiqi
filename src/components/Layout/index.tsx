@@ -1,6 +1,7 @@
 import * as React from "react";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
+import "../../styles/index.css";
 import "../../styles/global.scss";
 import "../../styles/content.scss";
 
