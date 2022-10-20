@@ -4,6 +4,7 @@ import { GatsbyImage, getImage } from "gatsby-plugin-image";
 import { ICategory } from "../types";
 import styled from "styled-components";
 import slugify from "slugify";
+import { PATH_PREFIX } from "../variables";
 
 export interface ICategoryCard extends ICategory {}
 
@@ -31,7 +32,7 @@ export const CategoryCard: React.FC<ICategoryCard> = ({
   });
   return (
     <Wrapper>
-      <Link to={`/interview-questions/${slug}`} key={id}>
+      <Link to={`/${PATH_PREFIX}/${slug}`} key={id}>
         <GatsbyImage
           image={image as any}
           alt={name}

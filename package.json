@@ -2,8 +2,8 @@
   "name": "wiqi",
   "version": "1.0.0",
   "private": true,
-  "description": "iq",
-  "author": "nick",
+  "description": "",
+  "author": "nickelaos",
   "keywords": [
     "gatsby"
   ],
@@ -39,6 +39,7 @@
     "autoprefixer": "^10.4.12",
     "gatsby-plugin-postcss": "^5.24.0",
     "postcss": "^8.4.18",
+    "prettier": "2.7.1",
     "tailwindcss": "^3.1.8",
     "typescript": "^4.7.3"
   }

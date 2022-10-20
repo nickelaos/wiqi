@@ -38,9 +38,9 @@ const AllCategories = () => {
   return (
     <Wrapper>
       {nodes &&
-        nodes.map((node: any) => {
-          //const { id, name, thumbnail, tooltip } = node;
-          return <CategoryCard {...node} />;
+        nodes?.map((node: any) => {
+          // const { id, name, thumbnail, tooltip } = node;
+          return <CategoryCard {...node} key={node.id} />;
         })}
     </Wrapper>
   );

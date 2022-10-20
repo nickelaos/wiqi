@@ -12,7 +12,7 @@ interface ILayout {
 export default function Layout({ children }: ILayout) {
   return (
     <div className="layout">
-      <div className="main-container">
+      <div className="container mx-auto main-container">
         <Navbar />
         <main className="content">{children}</main>
         <Footer />

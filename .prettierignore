@@ -1,0 +1,10 @@
+# Ignore artifacts:
+build
+coverage
+node_modules/
+.cache/
+public
+src/gatsby-types.d.ts
+.env*
+.idea
+

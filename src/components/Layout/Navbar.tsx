@@ -17,17 +17,19 @@ const Navbar = () => {
   const { description, title } = data.site.siteMetadata;
 
   return (
-    <nav className={styles.primaryNavbar}>
-      <Link to="/">
-        <h1>{title}</h1>
-      </Link>
-      <div className="links">
-        <span>{description}</span>
-        {/*<Link to="/">Home</Link>
-        <Link to="/">Categories</Link>
-        <Link to="/">Profile</Link>*/}
-      </div>
-    </nav>
+    <div className="container mx-auto">
+        <nav className={styles.primaryNavbar}>
+              <Link to="/">
+                <h1>{title}</h1>
+              </Link>
+              <div className="links">
+                <span>{description}</span>
+                {/*<Link to="/">Home</Link>
+                <Link to="/">Categories</Link>
+                <Link to="/">Profile</Link>*/}
+              </div>
+            </nav>
+    </div>
   );
 };
 
