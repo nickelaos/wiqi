@@ -16,7 +16,7 @@ const CategoryPage = (props: any) => {
     <Layout>
       <Head title={node.name} />
       <div>
-        {node.article.map((item: any) => {
+        {node.article?.map((item: any) => {
           const title = item.title.title;
           const itemSlug = slugify(title, {
             lower: true,
