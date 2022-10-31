@@ -35,6 +35,27 @@ const config: GatsbyConfig = {
         accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
       },
     },
+    {
+      resolve: `gatsby-plugin-webfonts`,
+      options: {
+        fonts: {
+          google: [
+            {
+              family: "Roboto",
+              variants: ["300", "400", "500"],
+            },
+            {
+              family: "Russo One",
+              variants: ["300", "400", "500"],
+            },
+            {
+              family: "Passion One",
+              variants: ["300", "400", "500"],
+            },
+          ],
+        },
+      },
+    },
   ],
 };
 
