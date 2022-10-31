@@ -3,6 +3,7 @@ import Layout from "../components/Layout";
 import { Link } from "gatsby";
 import slugify from "slugify";
 import { PATH_PREFIX } from "../variables";
+import { Head } from "../components/Head";
 
 const CategoryPage = (props: any) => {
   const { node } = props.pageContext;
@@ -13,6 +14,7 @@ const CategoryPage = (props: any) => {
 
   return (
     <Layout>
+      <Head title={node.name} />
       <div>
         {node.article.map((item: any) => {
           const title = item.title.title;
